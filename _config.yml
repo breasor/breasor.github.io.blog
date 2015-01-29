@@ -1,0 +1,106 @@
+# Site settings
+author:
+  name: Brett Reasor
+  email: brett.reasor@gmail.com
+  twitter: https://twitter.com/brettreasor
+
+
+title:
+description: "Some Description"
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://localhost:4000
+#url: http://breasor.github.io
+
+# version
+version: 0.1.0
+
+# Build settings
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+
+#markdown: kramdown
+kramdown:
+   coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      table
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+paginate: 5
+
+social-links:
+  dribbble:
+  email: brett.reasor@gmail.com
+  facebook: breasor
+  flickr:
+  github:
+  instagram: breasor
+  linkedin: breasor
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: brettreasor
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: brettreasor
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
+
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Tags
+    url: /tags
+  - title: Categories
+    url: /categories
+  - title: About
+    url: /about
+  - title: Stuff
+    url: /stuff
+
+social-icons:
+ - title: mail
+   url: mailto:brett.reasor@gmail.com
+   class: mail
+ - title: facebook
+   url: https://facebook.com/breasor
+   class: facebook-square
+ - title: GitHub
+   url: https://github.com/breasor
+   class: github
+ - title: LinkedIn
+   url: https://www.linkedin.com/in/breasor
+   class: linkedin
+ - title: Twitter
+   url: https://twitter.com/brettreasor
+   class: twitter
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Includes
+gems:
+  - coderay
+  - jekyll-sitemap
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
